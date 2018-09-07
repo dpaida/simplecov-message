@@ -1,5 +1,5 @@
-require "bundler/setup"
-require "simplecov_message"
+require 'bundler/setup'
+require 'simplecov-message'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

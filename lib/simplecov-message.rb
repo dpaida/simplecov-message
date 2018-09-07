@@ -1,9 +1,9 @@
-require 'simplecov_message/version'
+require 'simplecov-message/version'
 require 'simplecov'
 
 SimpleCov.profiles.define 'min_coverage_message' do
   load_profile 'rails'
-  at_exit do
+  SimpleCov.at_exit do
     result.format!
     if result.covered_percent.round(2) < minimum_coverage
       puts "\n\e[0;31m*** MINIMUM CODE COVERAGE OF #{minimum_coverage}% WAS NOT MET ***\e[m"

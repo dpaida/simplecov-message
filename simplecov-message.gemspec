@@ -1,16 +1,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "simplecov_message/version"
+require "simplecov-message/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "simplecov_message"
+  spec.name          = "simplecov-message"
   spec.version       = SimplecovMessage::VERSION
   spec.authors       = ["Doug Paida"]
   spec.email         = ["Douglas.Paida@Cerner.com"]
 
   spec.summary       = 'Display red or green message for whether SimpleCov coverage minimum was met.'
-  spec.homepage      = 'https://github.com/dpaida/simplecov_message.git'
+  spec.homepage      = 'https://github.com/dpaida/simplecov-message.git'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
